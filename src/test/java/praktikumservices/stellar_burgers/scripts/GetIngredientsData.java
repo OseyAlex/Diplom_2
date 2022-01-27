@@ -39,7 +39,7 @@ public class GetIngredientsData {
         Random rnd = new Random();
         int maxIngredientsQuantity = ingredientsData.getData().size();
         for (int i = 1; i <= numberOfIngredients; i++) {
-            ingredientsList.add(ingredientsData.getData().get(rnd.nextInt(maxIngredientsQuantity)).get_id());
+            ingredientsList.add(ingredientsData.getData().get(rnd.nextInt(maxIngredientsQuantity)).getId());
         }
         orderHash.put("ingredients", ingredientsList);
         return orderHash;
